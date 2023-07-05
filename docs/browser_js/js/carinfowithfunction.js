@@ -33,6 +33,7 @@ function processlist(car_rows) {
     populatelist(htmlRows);
 }
 
+// Invoke a function? 
 processlist(car_rows);
 
 
