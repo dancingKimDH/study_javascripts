@@ -8,7 +8,7 @@ let car = ``;
 let outHtml = ``;
 let result = ``;
 
-// second try
+// second try - chatGPT
 
 function forlooping(car_rows) {
     for(car of car_rows) {
