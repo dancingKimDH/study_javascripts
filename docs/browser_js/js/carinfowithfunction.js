@@ -8,18 +8,47 @@ let car = ``;
 let outHtml = ``;
 let result = ``;
 
-function trywithfunc(car_rows) {
+// second try
+
+function forlooping(car_rows) {
     for(car of car_rows) {
         outHtml = `${outHtml}<tr> <td> ${car.YEAR} </td>
         <td> ${car.CAR_NAME} </td>
         <td> ${car.CAR_INFOR_ID} </td>
         </tr>`
-        console.log(outHtml);
     }
-    let result = outHtml;
-    return result;
+    return outHtml;
 }
 
-let finalresult = trywithfunc(car_rows);
-let car_source = document.querySelector("#carlist");
-car_source.innerHTML = finalresult;
+function populatelist(htmlRows) {
+    let car_source = document.querySelector("#carlist");
+    car_source.innerHTML = htmlRows;
+}
+
+function processlist(car_rows) {
+    let htmlRows = forlooping(car_rows);
+    populatelist(htmlRows);
+}
+
+processlist(car_rows);
+
+
+
+// //first try
+
+
+// function trywithfunc(car_rows) {
+//     for(car of car_rows) {
+//         outHtml = `${outHtml}<tr> <td> ${car.YEAR} </td>
+//         <td> ${car.CAR_NAME} </td>
+//         <td> ${car.CAR_INFOR_ID} </td>
+//         </tr>`
+//         console.log(outHtml);
+//     }
+//     let result = outHtml;
+//     return result;
+// }
+
+// let finalresult = trywithfunc(car_rows);
+// let car_source = document.querySelector("#carlist");
+// car_source.innerHTML = finalresult;
