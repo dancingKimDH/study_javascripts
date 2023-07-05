@@ -36,3 +36,4 @@ function calculateFourth(funcName, param1, param2){
 
 // calculateFourth(calculateSumFirst, 5, 2)
 // 17
+
