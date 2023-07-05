@@ -13,18 +13,26 @@ let third = calculateSumFirst(4, 6);
 // let functionanme = (variable) => {return}
 // declare a variable(function), end with semicolon
 
-let calculateSumSecond = (first, second) => {
-    return first + second;
+let calculateMinusSecond = (first, second) => {
+    return first - second;
 };
 
 // calculateSumFirst(1,2)
 // 3
-// calculateSumSecond(3,4)
-// 7
 // let calculateSumThird = calculateSumSecond
 // undefined
-// calculateSumThird(5,6)
-// 11
+// calculateSumThird(6,5)
+// 1
 
 
 // callback function
+// client - calls - function1 - calls - function2
+
+function calculateFourth(funcName, param1, param2){
+    let result = funcName(param1, param2);
+    result = result + 10;
+    return result;
+}
+
+// calculateFourth(calculateSumFirst, 5, 2)
+// 17
