@@ -10,6 +10,7 @@ let result = ``;
 
 // second try - chatGPT
 
+// Generate HTML code
 function forlooping(car_rows) {
     for(car of car_rows) {
         outHtml = `${outHtml}<tr> <td> ${car.YEAR} </td>
@@ -20,11 +21,13 @@ function forlooping(car_rows) {
     return outHtml;
 }
 
+// Update carlist element with the generated HTML
 function populatelist(htmlRows) {
     let car_source = document.querySelector("#carlist");
     car_source.innerHTML = htmlRows;
 }
 
+//Main function
 function processlist(car_rows) {
     let htmlRows = forlooping(car_rows);
     populatelist(htmlRows);
