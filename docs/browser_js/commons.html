@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commons</title>
 </head>
+
 <body>
     <div>
         Commons
@@ -14,10 +16,22 @@
         condition : js/condition.js
         loops: ./js/loops.js
         arrays: ./js/arrays.js
+        functions: ./js/functions.js
     </div>
     <div id="loops">
         inner text
     </div>
+    <div>
+        events : ./js/events.js
+
+        <!-- 밖에 double quotation 존재하니 안에는 single로 -->
+        <div>
+            <button onclick="alert('This is an Alert Function')"> alert </button>
+        </div>
+        <div onclick="alert('This is a Div event')"> Div event </div>
+        <div> <input type="text" name="" id="keydownEnter"></div>
+    </div>
 </body>
-<script src="./js/functions.js"></script>
+<script src="./js/events.js"></script>
+
 </html>
